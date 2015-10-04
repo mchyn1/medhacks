@@ -5,11 +5,25 @@ body {
 }
 
 .navbar {
-  margin-bottom: 20px;
+  background-color: #d9edf7;
 }
 
 .primary-content{
-  background: linear-gradient(180deg, #fff, transparent),
+  background: linear-gradient(#fff, transparent 90%),
+			  linear-gradient(180deg, #fff, transparent),
               #ffa949 url('img/handshake.jpg') no-repeat center;
-  height: 560px;
+  height: 700px;
+}
+
+.active1{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+li:hover{
+  background-color: #ffffff;
+}
+
+li.nohover{
+background-color: #d9edf7;
 }
