@@ -1,0 +1,35 @@
+#eng {
+	background-color: #ffef95;
+	float: right;
+	margin-right: 2px;
+	width: 17px;
+	height: 17px;
+	text-align: center;
+}
+
+#med {
+	background-color: #FF6666;
+	margin-right: 2px;
+	float: right;
+	width: 17px;
+	height: 17px;
+	text-align: center;
+}
+
+#tech {
+	background-color: #94B8FF;
+	margin-right: 2px;
+	float: right;
+	width: 17px;
+	height: 17px;
+	text-align: center;
+}
+
+#bus {
+	background-color: #99FF99;
+	margin-right: 2px;
+	float: right;
+	width: 17px;
+	height: 17px;
+	text-align: center;
+}
