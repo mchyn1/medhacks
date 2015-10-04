@@ -27,3 +27,8 @@ li:hover{
 li.nohover{
 background-color: #d9edf7;
 }
+
+.tableheadings {
+	font-size: 20px;
+	font-weight: bold;
+}
