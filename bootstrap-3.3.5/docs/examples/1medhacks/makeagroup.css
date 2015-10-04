@@ -42,3 +42,11 @@ background-color: #d9edf7;
 			  linear-gradient(180deg, #fff, transparent),
               #ffa949 url('img/projectcancer.jpg') no-repeat;
 }
+
+.projectimg2 {
+	position: relative;
+	background-position: -500 0 0 -500px;
+	background: linear-gradient(#fff, transparent 50%),
+			  linear-gradient(180deg, #fff, transparent),
+              #ffa949 url('img/prescription.jpg') no-repeat;
+}
