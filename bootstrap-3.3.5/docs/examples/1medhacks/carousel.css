@@ -57,7 +57,13 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
+<<<<<<< HEAD
   height: 600px;
+=======
+  height: 500px;
+  opacity: .4;
+  filter: alpha(opacity=40);
+>>>>>>> origin/master
 }
 
 
