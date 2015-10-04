@@ -15,6 +15,13 @@ body {
   height: 700px;
 }
 
+.primary-content1{
+  background: linear-gradient(#fff, transparent 90%),
+			  linear-gradient(180deg, #fff, transparent),
+              #ffa949 url('img/pitchidea.jpg') no-repeat center;
+  height: 700px;
+}
+
 .active1{
   background-color: #ffffff;
   color: #000000;
