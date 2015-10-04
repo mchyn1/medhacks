@@ -1,0 +1,15 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.primary-content{
+  background: linear-gradient(180deg, #fff, transparent),
+              #ffa949 url('img/handshake.jpg') no-repeat center;
+  height: 560px;
+}
