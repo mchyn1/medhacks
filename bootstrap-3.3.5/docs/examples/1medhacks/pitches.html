@@ -20,7 +20,6 @@
 	
     <!-- Custom styles for this template -->
     <link href="makeagroup.css" rel="stylesheet">
-	<link href="arrow.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -54,8 +53,8 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Pitches</a></li>
-              <li class="active1"><a href="#">Groups</a></li>
+              <li class="active1"><a href="#">Pitches</a></li>
+              <li><a href="#">Groups</a></li>
             </ul>
 			
             <ul class="nav navbar-nav navbar-right">
@@ -91,20 +90,20 @@
 	<div class="container">
 	<div class="panel panel-info">
 	<div class="panel-heading">
+		<h1><center>Form Ideas<br><br><i class="fa fa-lightbulb-o fa-2x"></i><br>&nbsp </center></h1>
+	</div>
+
+	<div class="panel-body"><br>
 		<div class="row"><div class="col-lg-3"></div>
 		<div class="col-lg-6">
 						<div class="input-group input-group-lg">
-						  <input type="text" size="30" maxlength="1000" value="" id="textBoxSearch" onkeyup="tableSearch.search(event);" class="form-control" placeholder="Search for Groups">
+						  <input type="text" size="30" maxlength="1000" value="" id="textBoxSearch" onkeyup="tableSearch.search(event);" class="form-control" placeholder="Search for Pitches">
 						  <span class="input-group-btn">
 							<button class="btn btn-default" type="button" value="Search" onclick="tableSearch.runSearch();"><i class="fa fa-search"></i></button>
 						  </span>
 						</div><!-- /input-group -->
 						</td>
-		</div></div>
-	</div>
-
-	<div class="panel-body">
-		<p>Search for Groups</p>
+		</div></div><br>
 	</div>
 
 
@@ -112,23 +111,56 @@
 			<tr class="tableheadings">
 				<td style="width: 100px">Votes</td>
 				<td>Answers</td>
+				<td>Author</td>
 				<td>Pitch</td>
 				<td>Tags</td>
 			</tr>
 			<tr>
-				<td><i class="fa fa-arrows-v fa-lg"></i> &nbsp 2</td>
+				<td><p><center><a href=""><i class="fa fa-caret-up fa-2x"></i></a><br>2<br><a href=""><i class="fa fa-caret-down fa-2x"></i></a></center></p></td>
 				<td>1</td>
+				<td>Author name</td>
 				<td><a href="projectpage.html">Medicine taking reminder app</a></td>
 				<td>mobile-app, general, pharmaceuticals</td>
 			</tr>
 			<tr>
-				<td><i class="fa fa-arrows-v fa-lg"></i> &nbsp 100</td>
+				<td><p><center><a href=""><i class="fa fa-caret-up fa-2x"></i></a><br>100<br><a href=""><i class="fa fa-caret-down fa-2x"></i></a></center></p></td>
 				<td>22</td>
+				<td>Author name</td>
 				<td><a href="projectpage.html">Phone app to train people on emergency medical care like CPR and the Heimlich Maneuver</td>
 				<td>mobile-app, emergency-procedures, awareness</td>
 			</tr>
 		</table>
 		</div>
+		
+		<div class="panel panel-info">
+		<div class="panel-heading">
+		</div>
+		<div class="panel-body">
+		<div class="vote">
+			<p><center><a href=""><i class="fa fa-caret-up fa-2x"></i></a><br>2<br><i class="fa fa-caret-down fa-2x"></i></center></p>
+			<a href=""><div class="arrow-up"></div></a>
+			<div>2</div>
+			<a href=""><div class="arrow-down"></div></a>
+		</div>
+		<div style="float: 10px 0 0 40px;">Medicine taking reminder app</div>
+		<div>by Author</div>
+		<br>
+		<div class="comment">
+			Maybe you can sync it with their google calendar!
+			<div class="author">by dude1</div>
+		</div>
+		</div>
+		</div>
+		
+		<!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 MedHackers, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+	</div>
+	<!-- /container -->	
+		
+		
 		</div>
 		<script>
 			//define the table search object, which can implement both functions and properties
