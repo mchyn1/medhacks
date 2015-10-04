@@ -1,4 +1,166 @@
+<!DOCTYPE html>
 <html>
-	<head><title>MedHacks Party Finder</title></head>
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="medkit-512.ico">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <title>MedHacks Party Finder</title>
 
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	
+    <!-- Custom styles for this template -->
+    <link href="makeagroup.css" rel="stylesheet">
+	<link href="skills.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+	<script src="sorttable.js"></script>	
+	<!--
+	needs massive styling.
+	-->
+	
+<body onload="tableSearch.init();">
+ <!-- Fixed navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Med <i class="fa fa-medkit"></i> Hackers</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pitches.html">Pitches</a></li>
+              <li class="active1"><a href="#">Groups</a></li>
+            </ul>
+			
+            <ul class="nav navbar-nav navbar-right">
+			<li class="nohover">
+				<form class="navbar-form" role="search">
+					<div class="form-group">
+					  <input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button class="btn btn-default" type="button" value="Search" onclick="tableSearch.runSearch();"><i class="fa fa-search"></i></button>
+				</form>
+			</li>	
+             <!-- <li class="active"><a href="#">Default <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Static top</a></li>
+              <li><a href="#">Fixed top</a></li>-->
+			  <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">My Profile</a></li>
+                  <li><a href="#">My Projects</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Account Settings</a></li>
+                  <li><a href="#">Sign Out</a></li>
+                </ul>
+              </li>
+            </ul>
+			
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-->
+      </nav>
+	<br><br><br>
+	
+	
+	<div class="container">
+	<div class="panel panel-info">
+	<div class="panel-heading projectimg">
+		<center><h1>Project: Curing Cancer</h1>
+	</div>
+	<table class="table table-bordered">
+			<tr><td style="width:150px" class="tableheadings">Recruiter:</td><td>Mary Sue</td></tr>
+		<tr><td class="tableheadings">Contact Info:</td><td><a href="mailto:mary@sue.com">mary@sue.com</a></td></tr>
+		<tr><td class="tableheadings">Objective:</td><td> Inset a verry very long sentence here so I can test if the formatting works.Inset a verry very long sentence here so I can test if the formatting works.Inset a verry very long sentence here so I can test if the formatting works.</td></tr>
+		<tr><td class="tableheadings">Status:</td><td>Open</td></tr>
+		<tr><td class="tableheadings">Current Members:</td><td>
+		<div class="row">
+				<div class="col-sm-3">Firstname Lastname</div>
+				<div class="col-sm-3">Engineer</div>
+			</div><br>
+			<div class="row">
+				<div class="col-sm-3">Second Members</div>
+				<div class="col-sm-3">Doctor</div>
+			</div>
+	<tr><td class="tableheadings">Tags:</td><td>cancer, oncology</td></tr>
+	</table>
+		
+	
+	</div>
+		
+		<!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 MedHackers, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+		
+		</div><!-- /container -->	
+		<script>
+			//define the table search object, which can implement both functions and properties
+			window.tableSearch = {};
+
+			//initialize the search, setup the current object
+			tableSearch.init = function() {
+				//define the properties I want on the tableSearch object
+				this.Rows = document.getElementById('data').getElementsByTagName('TR');
+				this.RowsLength = tableSearch.Rows.length;
+				this.RowsText = [];
+			   
+				//loop through the table and add the data to the table search object
+				for (var i = 0; i < tableSearch.RowsLength; i++) {
+					this.RowsText[i] = (tableSearch.Rows[i].innerText) ? tableSearch.Rows[i].innerText.toUpperCase() : tableSearch.Rows[i].textContent.toUpperCase();
+				}
+			}
+			
+			//onlys shows the relevant rows as determined by the search string
+			tableSearch.runSearch = function() {
+            //get the search term
+            this.Term = document.getElementById('textBoxSearch').value.toUpperCase();
+           
+            //loop through the rows and hide rows that do not match the search query
+            for (var i = 0, row; row = this.Rows[i], rowText = this.RowsText[i]; i++) {
+                row.style.display = ((rowText.indexOf(this.Term) != -1) || this.Term === '') ? '' : 'none';
+				}
+			}
+			//handles the enter key being pressed
+			tableSearch.search = function(e) {
+				//checks if the user pressed the enter key, and if they did then run the search
+				var keycode;
+				if (window.event) { keycode = window.event.keyCode; }
+				else if (e) { keycode = e.which; }
+				else { return false; }
+				if (keycode == 13) {
+					tableSearch.runSearch();
+				}
+				else { return false; }
+			}
+			
+		
+		</script>
+	</body>
 </html>
