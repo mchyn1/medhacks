@@ -92,11 +92,10 @@
 	<div class="panel panel-info">
 	<div class="panel-heading">
 		<center><h1>Build Teams<br><br><i class="fa fa-users fa-2x"></i><br>&nbsp </h1>
-        <a class="btn btn-lg btn-primary" href="makeagroup.html" role="button">Create a New Group &raquo;</a><br>&nbsp </center>
 	</div>
 
 	<div class="panel-body"><br>
-	<div class="row"><div class="col-lg-3"></div>
+	<div class="row"><div class="col-lg-1"></div>
 		<div class="col-lg-6">
 						<div class="input-group input-group-lg">
 						  <input type="text" size="30" maxlength="1000" value="" id="textBoxSearch" onkeyup="tableSearch.search(event);" class="form-control" placeholder="Search for Groups">
@@ -105,13 +104,19 @@
 						  </span>
 						</div><!-- /input-group -->
 						</td>
-		</div></div><br>
-	</div>
-
-	<div id="med"></div> - Medical Expertise
-	<div id="tech"></div> - Computing Expertise
-	<div id="bus"></div> - Business Expertise
+		</div>
+		<div class="col-lg-1"></div>
+		<div class="col-lg-2">
+			<a class="btn btn-lg btn-default" href="makeagroup.html" role="button">Create a Group &raquo;</a><br>&nbsp </center>
+		</div></div>
+		
+	<p><center>
+	<div id="med"></div> - Medical Expertise &nbsp;
+	<div id="tech"></div> - Computing Expertise &nbsp;
+	<div id="bus"></div> - Business Expertise &nbsp;
 	<div id="eng"></div> - Design Expertise
+	</center></p>
+	</div>
 		<table class="sortable table table-bordered table-hover">
 			<tr class="tableheadings">
 				<td style="width: 100px">Recruiter</td>
@@ -124,18 +129,8 @@
 			<tbody id="data">
 				<tr>
 					<td>Mary Sue</td>
-<<<<<<< HEAD
 					<td><div id="med">2</div><div id="tech">3</div><div id="bus">1</div><div id="eng">0</div></td>
 					<td><a href="projectpage.html">Curing Cancer</a></td>
-=======
-					<td>
-						<div id="med">2</div>
-						<div id="tech">3</div>
-						<div id="bus">1</div>
-						<div id="eng">0</div>
-					</td>
-					<td>Curing Cancer</td>
->>>>>>> origin/master
 					<td>Inset a verry very long sentence here so I can test if the formatting works.Inset a verry very long sentence here so I can test if the formatting works.Inset a verry very long sentence here so I can test if the formatting works.</td>
 					<td class="tag">cancer, oncology</td>
 				</tr>
@@ -147,9 +142,9 @@
 						<div id="bus">1</div>
 						<div id="eng">0</div>
 					</td>
-					<td>I have cancer</td>
-					<td>Inset a verry very long sentence here so I can test if the formatting works.</td>
-					<td class="tag">strangeness, troll, cancer</td>
+					<td>Patient Identification</td>
+					<td>Configure secure system to identify patients based on biometric data</td>
+					<td class="tag">identification, patient, hospital</td>
 				</tr>
 				<tr>
 					<td>Gary Stu</td>
@@ -160,12 +155,13 @@
 						<div id="eng">1</div>
 					</td>
 					<td>Layman's Medical Dictionary</td>
-					<td>create an app that translates doctor's jargon into layman's terms and shows me interesting things</td>
+					<td>Create a mobile app that translates doctor's jargon into layman's terms and facilitates communication between patient and doctors</td>
 					<td class="tag">language barriers, general, language</td>
 				</tr>
 			</tbody>
 		</table>
-		</div>
+		
+	</div>
 		
 	<!-- FOOTER -->
       <footer>
